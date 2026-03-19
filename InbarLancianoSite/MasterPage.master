@@ -19,16 +19,19 @@
 			
 		<nav class="main_nav">   	
 			<a href="Default.aspx">Home</a>
-			<a href="FirstPage.aspx">Tennis racket data</a>				
+			<a id="TennisracketLink" href="FirstPage.aspx">Tennis racket data</a>				
 		</nav>
 	</header>
 		
 	<section class="center">
 		<aside>
+			<h3>Brands</h3>
+            <p><a href="Wilson.aspx">Wilson</a></p>
 				תוכן אזור צד
 		</aside>
 			
 		<main>
+			
 			<asp:ContentPlaceHolder id="ContentPlaceHolderMain" runat="server">
 			</asp:ContentPlaceHolder>
 		</main>

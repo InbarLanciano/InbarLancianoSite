@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
     <div>
-        <h1>First Page</h1>
+        <h1></h1>
     </div>
 </asp:Content>
 

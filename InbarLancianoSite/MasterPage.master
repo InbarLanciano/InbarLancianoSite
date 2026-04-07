@@ -1,47 +1,47 @@
-﻿﻿<<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/StyleSheet.css?v=2") %>" />
     <meta charset="utf-8" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <header>
-		<section class="header_top">				
-				<h1>tennis Racket Reviews</h1>
-		</section>
-			
-		<nav class="main_nav">   	
-			<a href="Default.aspx">Home</a>
-			<a id="TennisracketLink" href="FirstPage.aspx">Tennis racket data</a>				
-		</nav>
-	</header>
-		
-	<section class="center">
-		<aside>
-			<h3>Brands</h3>
-            <p><a href="Wilson.aspx">Wilson</a></p>
-				תוכן אזור צד
-		</aside>
-			
-		<main>
-			
-			<asp:ContentPlaceHolder id="ContentPlaceHolderMain" runat="server">
-			</asp:ContentPlaceHolder>
-		</main>
-	</section>
-			
-	<footer>
-			תוכן אזור תחתון
-	</footer>
+        <header>
+            <section class="header_top">
+                <h1>Tennis Racket Reviews</h1>
+            </section>
+
+            <nav class="main_nav">
+                <a id="homeLink" runat="server" href="Default.aspx">Home</a>
+                <a id="tennisLink" runat="server" href="FirstPage.aspx">Explore Tennis Rackets</a>
+            </nav>
+        </header>
+
+        <section class="center">
+
+            <aside>
+                <asp:ContentPlaceHolder id="ContentPlaceHolderAside" runat="server">
+                </asp:ContentPlaceHolder>
+            </aside>
+
+            <main>
+                <asp:ContentPlaceHolder id="ContentPlaceHolderMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+        </section>
+
+        <footer>
+            <asp:Button runat="server" backcolor="green" Text="Back to Home" PostBackUrl="~/Default.aspx" CssClass="BackToHomeButton"/>
+        </footer>
     </form>
-	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>
 </body>
 </html>

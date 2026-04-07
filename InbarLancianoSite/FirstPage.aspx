@@ -3,14 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
-    <div>
-        <h1></h1>
-    </div>
+    Racket Data
 </asp:Content>
 
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
+        <h3>Brands</h3>
+        <p><a href="Wilson.aspx">Wilson</a></p>
+        <p><a href="Head.aspx">Head</a></p>
+</asp:Content>
 
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
 </asp:Content>
 

@@ -1,14 +1,14 @@
-﻿﻿html {
-    direction: rtl;
+﻿html {
+    direction: ltr;
 }
 
 header, .center, footer {
-    min-height: 80px;
-    border: 2px solid blue;
+    min-height: 30px;
+    border: 2px solid green;
 }
 
 header {
-    background-color: white;
+    background-color: lightgray;
     margin-bottom: 5px;
 }
 
@@ -17,53 +17,162 @@ header {
     display: flex;
 }
 
-
-
 .main_nav {
     background-color: lightgray;
     min-height: 30px;
-    padding-left: 100px;
+    padding-left: 20px;
     padding-right: 100px;
+    display: flex;
+    gap: 50px;
 }
 
     .main_nav a {
         text-decoration: none;
         font-size: 24px;
         color: darkblue;
-        margin: 10px;
+        margin: 0;
     }
 
-
-.center {
-    background-color: lime;
-    margin-bottom: 5px;
-    display: flex;
-}
+        .main_nav a.active {
+            color: darkred;
+            font-weight: normal;
+        }
 
 main, aside {
     min-height: 300px;
 }
 
-main {
-    background-color: darkblue;
-    flex: 4;
-    color: white;
-    padding: 5px 10px;
+.center {
+    direction: ltr;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
 }
-
 
 aside {
     background-color: gray;
-    flex: 1;
+    width: 220px;
     padding: 5px;
-    text-align: center;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+main {
+    direction: ltr;
+    background-color: darkblue;
+    flex: 1;
+    color: white;
+    padding: 10px;
 }
 
 footer {
-    background-color: orange;
+    background-color: green;
 }
 
-#TennisracketLink {
-    margin-left: 300px;
-    margin-right: auto;
+.BackToHomeButton {
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
 }
+
+.racket-page {
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr) 620px;
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+}
+
+.racket-text {
+    min-width: 0;
+}
+
+.media-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding-top: 40px; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+    .image-container img {
+        width: 220px;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+    .video-container iframe {
+        width: 100%;
+        max-width: 560px;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        border: 0;
+    }
+
+@media (max-width: 1100px) {
+    .racket-page {
+        grid-template-columns: 1fr;
+    }
+
+    .media-panel {
+        padding-top: 10px;
+    }
+}
+
+img.home-image {
+    display: block;
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+    margin: 30px 100px 30px 50px;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 1100px) {
+    .summary-div {
+        grid-template-columns: 1fr;
+    }
+
+    .media-side {
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .center {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 180px;
+    }
+}
+
+
+/*
+body {
+    background-color: deeppink !important;
+}
+*/

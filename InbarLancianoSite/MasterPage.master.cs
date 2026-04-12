@@ -12,15 +12,41 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string currentPage = System.IO.Path.GetFileName(Request.Path);
+        if (!IsPostBack)
+        {
+            DateLabel.Text = DateTime.Now.ToString("d");
 
-        if (currentPage == "Default.aspx")
-        {
-            homeLink.Attributes["class"] = "active";
+            string dayOfWeek = DateTime.Now.DayOfWeek.ToString();
+            string imagePath = GetImagePathForDay(dayOfWeek);
+
+            DayImage.ImageUrl = imagePath;
+            DayImage.AlternateText = "Image for dayOfWeek" + dayOfWeek;
         }
-        else if (currentPage == "FirstPage.aspx")
+
+        
+    }
+    private string GetImagePathForDay(string dayOfWeek)
+    {
+        string path = "images/week/";
+        switch (dayOfWeek)
         {
-            tennisLink.Attributes["class"] = "active";
+            case "Sunday":
+                return path + "sunday.png";
+            case "Monday":
+                return path + "monday.png";
+            case "Tuesday":
+                return path + "tuesday.png";
+            case "Wednesday":
+                return path + "wednesday.png";
+            case "Thursday":
+                return path + "thursday.png";
+            case "Friday":
+                return path + "friday.png";
+            case "Saturday":
+                return path + "saturday.png";
+            default:
+                return path + "default.png";
         }
     }
+
 }

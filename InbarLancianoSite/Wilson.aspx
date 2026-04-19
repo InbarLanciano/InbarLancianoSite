@@ -6,32 +6,34 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
     <div class="racket-page">
         <div class="racket-text">
-            <h2>Wilson Clash 100</h2>
+            <h2 class="racket-title">Wilson Clash 100</h2>
 
-            <p><strong>Company:</strong> Wilson</p>
-            <p><strong>Weight:</strong> 295g</p>
-            <p><strong>Head Size:</strong> 100 in²</p>
-            <p><strong>Length:</strong> 27 in</p>
-            <p><strong>Balance:</strong> 31.0 cm</p>
-            <p><strong>String Pattern:</strong> 16x19</p>
+            <div class="specs-box">
+                <p><strong>Company:</strong> Wilson</p>
+                <p><strong>Weight:</strong> 295g</p>
+                <p><strong>Head Size:</strong> 100 in²</p>
+                <p><strong>Length:</strong> 27 in</p>
+                <p><strong>Balance:</strong> 31.0 cm</p>
+                <p><strong>String Pattern:</strong> 16x19</p>
+            </div>
 
             <h3>Advantages</h3>
-            <ul>
+            <ul class="check-list">
                 <li>Comfortable for the arm</li>
                 <li>Good control</li>
                 <li>Easy to swing</li>
             </ul>
 
             <h3>Disadvantages</h3>
-            <ul>
+            <ul class="cross-list">
                 <li>Less power than some other rackets</li>
                 <li>Not always best for very advanced players</li>
             </ul>
 
-            <h2>Summary</h2>
-            <p>
+            <h2 class="summary-title">Summary</h2>
+            <p class="summary-text">
                 The Wilson Clash 100 is a popular tennis racket for beginner and intermediate players.
-                It is comfortable, flexible, and easy to use.
+                It is famous for its unique flexibility, making it one of the most comfortable rackets on the market today.
             </p>
         </div>
 
@@ -52,12 +54,19 @@
     </div>
 </asp:Content>
 
-
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
-<h3>Willson Series</h3>
+    <div class="aside-info">
+        <h3>Wilson Series</h3>
+        <p>Wilson is a legendary American sports brand. Their rackets are used by icons like Roger Federer and Serena Williams.</p>
+        <hr />
+        <h4>Other Wilson Models:</h4>
+        <ul class="aside-links">
+            <li>Wilson Blade (Control)</li>
+            <li>Wilson Ultra (Power)</li>
+            <li>Wilson Pro Staff (Precision)</li>
+        </ul>
+    </div>
 </asp:Content>
-
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
 </asp:Content>
-

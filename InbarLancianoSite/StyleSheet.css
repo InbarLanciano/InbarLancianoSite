@@ -155,7 +155,7 @@ footer {
 img.home-image {
     display: block;
     width: 70%;
-    max-width: 800px;
+    max-width: 400px;
     height: auto;
     margin: 30px 100px 30px 50px;
     border-radius: 8px;
@@ -184,6 +184,72 @@ img.home-image {
     .image-container img {
         width: 180px;
     }
+}
+.home-article h2 {
+    color: #a3ce27;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tennis-list {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 8px;
+    list-style-type: disc;
+}
+
+    .tennis-list li {
+        margin-bottom: 12px;
+    }
+
+.links-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px dashed #a3ce27;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: #a3ce27;
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: transform 0.2s;
+}
+
+    .btn-link:hover {
+        transform: scale(1.05);
+        background-color: #8fb520;
+    }
+
+.main-page-img {
+    display: block;
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.aside-content h3 {
+    color: #a3ce27;
+    margin-bottom: 10px;
+}
+
+.aside-content p {
+    font-size: 0.9em;
+    line-height: 1.4;
 }
 
 /*

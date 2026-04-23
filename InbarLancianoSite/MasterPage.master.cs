@@ -10,8 +10,21 @@ using System.Web.UI.WebControls;
 
 public partial class MasterPage : System.Web.UI.MasterPage
 {
+
     protected void Page_Load(object sender, EventArgs e)
     {
+        if ((bool)Session["isLoggedIn"])
+        {
+            LoginLogout.HRef = "Logout.aspx";
+            LoginLogout.InnerText = "Hello, " + Session["userName"] + "(Click to logout)";
+        }
+        else
+        {
+            LoginLogout.HRef = "Login.aspx";
+            LoginLogout.InnerText = "login";
+        }
+
+
         if (!IsPostBack)
         {
             DateLabel.Text = DateTime.Now.ToString("d");

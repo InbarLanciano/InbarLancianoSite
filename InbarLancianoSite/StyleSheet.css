@@ -40,6 +40,8 @@ header {
     padding-right: 100px;
     display: flex;
     gap: 50px;
+    display: flex;
+    align-items: center;
 }
 
     .main_nav a {
@@ -303,6 +305,13 @@ tr:hover {
 .highlight-row {
     background-color: rgba(163, 206, 39, 0.2);
 }
+
+.main_nav .login_logout {
+    margin-left: auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+
 
 /*
  body {

@@ -24,6 +24,8 @@
             <a id="tennisLink" runat="server" href="FirstPage.aspx">Explor Tennis Rackets</a>
             <a id="pickLink" runat="server" href="PickRacket.aspx">How to Choose</a>
             <a id="essentialsLink" runat="server" href="Essentials.aspx">Essentials</a>
+
+            <a class="login_logout" ID="LoginLogout" runat="server"></a>
         </nav>
     </header>
 

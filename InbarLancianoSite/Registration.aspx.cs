@@ -125,6 +125,24 @@ public partial class Registration : System.Web.UI.Page
         // RegistrationResult.InnerText
         // ולהחזיר:
         // return false;
+        string id = idNum.Value;
+        bool numberExist = false;
+        if (id.Length != 9)
+        {
+            RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל בדיוק תשעה תווים. ";
+            return false;
+        }
+        for (int i = 0; i < id.Length; i++)
+        {
+            // בדיקת קיום מספרים
+             if (id[i] >= '0' && id[i] <= '9')
+                numberExist = true;
+        }
+        if (!numberExist)
+        {
+            RegistrationResult.InnerText += "הסיסמה חייבת להכיל ומספרים. ";
+            return false;
+        }
 
         return true;
     }

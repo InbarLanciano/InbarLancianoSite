@@ -17,7 +17,7 @@ public partial class Registration : System.Web.UI.Page
             if (Form_Validation() && Insert_Into_Database())
             {
                 RegistrationResult.InnerText =
-                        firstName.Value + ", רישום מוצלח, יש לעבור לדף הכניסה.";
+                        firstName.Value + ", Registration successful, please go to the login page.";
             }
         }
     }
@@ -41,7 +41,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (fname.Length < 2)
         {
-            RegistrationResult.InnerText += "שם פרטי חייב להכיל לפחות שני תווים. ";
+            RegistrationResult.InnerText += "First name must contain at least two characters.";
             return false;
         }
 
@@ -54,7 +54,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (lname.Length < 2)
         {
-            RegistrationResult.InnerText += "שם משפחה חייב להכיל לפחות שני תווים. ";
+            RegistrationResult.InnerText += "A last name must contain at least two characters.";
             return false;
         }
 
@@ -67,7 +67,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (uname.Length < 3 || uname.Length > 8)
         {
-            RegistrationResult.InnerText += "שם משתמש חייב להכיל בין שלושה לשמונה תווים. ";
+            RegistrationResult.InnerText += "A username must contain between three and eight characters.";
             return false;
         }
 
@@ -82,7 +82,7 @@ public partial class Registration : System.Web.UI.Page
         // קוד שמוודא שהסיסמה בין 6 ל-10 תווים בלבד
         if (password.Length < 6 || password.Length > 10)
         {
-            RegistrationResult.InnerText += "הסיסמה חייבת להכיל בין 6 ל-10 תווים. ";
+            RegistrationResult.InnerText += "The password must contain between 6 and 10 characters.";
             return false;
         }
 
@@ -100,14 +100,14 @@ public partial class Registration : System.Web.UI.Page
         }
         if (!letterExist || !numberExist)
         {
-            RegistrationResult.InnerText += "הסיסמה חייבת להכיל אותיות ומספרים. ";
+            RegistrationResult.InnerText += "Password must contain letters and numbers.";
             return false;
         }
 
         // קוד לוידוא סיסמה ווידוא סיסמה זהים
         if (password != pswdV)
         {
-            RegistrationResult.InnerText += "הסיסמה ווידוא הסיסמה אינם זהים. ";
+            RegistrationResult.InnerText += "The password and password verification are not the same.";
             return false;
         }
 
@@ -116,32 +116,19 @@ public partial class Registration : System.Web.UI.Page
 
     private bool ID_Validation()
     {
-        // === משימה לתלמיד: וידוא תעודת זהות ===
-        // 1. ודא שאורך תעודת הזהות הוא בדיוק 9 תווים
-        // 2. ודא שכל התווים במחרוזת הם ספרות בלבד
-        // כדי לעבור על כל התווים, תוכל להיעזר בלולאה שמופיעה בפעולה:
-        // Password_Validation
-        // 3. אם יש שגיאה, אל תשכח להוסיף הודעה אל:
-        // RegistrationResult.InnerText
-        // ולהחזיר:
-        // return false;
         string id = idNum.Value;
-        bool numberExist = false;
         if (id.Length != 9)
         {
-            RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל בדיוק תשעה תווים. ";
+            RegistrationResult.InnerText += "The ID must contain exactly nine characters.";
             return false;
         }
         for (int i = 0; i < id.Length; i++)
         {
-            // בדיקת קיום מספרים
-             if (id[i] >= '0' && id[i] <= '9')
-                numberExist = true;
-        }
-        if (!numberExist)
-        {
-            RegistrationResult.InnerText += "הסיסמה חייבת להכיל ומספרים. ";
-            return false;
+            if (!(id[i] >= '0' && id[i] <= '9'))
+            {
+                RegistrationResult.InnerText += "ID must be ONLY numbers. ";
+                return false;
+            }
         }
 
         return true;
@@ -149,29 +136,52 @@ public partial class Registration : System.Web.UI.Page
 
     private bool Phone_Validation()
     {
-        // === משימה לתלמיד: וידוא מספר טלפון ===
-        // 1. ודא שאורך מספר הטלפון הוא בדיוק 10 תווים
-        // 2. ודא שהתו הראשון במספר הוא הספרה אפס
-        // 3. ודא שכל התווים במחרוזת הם ספרות בלבד
-        // 4. במקרה שאחד מהתנאים לא מתקיים, עדכן את:
-        // RegistrationResult.InnerText
-        // וסיים את הפעולה עם:
-        // return false;
+        string P = phone.Value;
+
+        if (P.Length != 10)
+        {
+            RegistrationResult.InnerText += "The phone number must contain exactly ten characters.";
+            return false;
+        }
+        if (P[0] != '0')
+        {
+            RegistrationResult.InnerText += "The first character in the number must be the digit 0.";
+            return false;
+        }
+        for (int i = 0; i < P.Length; i++)
+        {
+            if (!(P[i] >= '0' && P[i] <= '9'))
+            {
+                RegistrationResult.InnerText += "Phone number must be ONLY numbers.";
+                return false;
+            }
+        }
 
         return true;
     }
 
     private bool Email_Validation()
     {
-        // === משימה לתלמיד: וידוא כתובת אימייל בסיסית ===
-        // ודא שהתנאים הבאים מתקיימים:
-        // 1. המחרוזת מכילה את התו שטרודל
-        // 2. המחרוזת מכילה את התו נקודה
-        // 3. הנקודה מופיעה אחרי השטרודל
-        // רמז: כדי למצוא את המיקום של התווים, חפש ברשת איך להשתמש בפעולה:
-        // IndexOf
-        // במקרה שאחד התנאים לא מתקיים, הוסף הודעת שגיאה מתאימה והחזר:
-        // return false;
+        string M = mail.Value;
+
+        int atIndex = M.IndexOf('@');
+        int dotIndex = M.IndexOf('.');
+
+        if (atIndex == -1)
+        {
+            RegistrationResult.InnerText += "The email must contain the character @.";
+            return false;
+        }
+        if (dotIndex == -1)
+        {
+            RegistrationResult.InnerText += "The email must contain the character dot.";
+            return false;
+        }
+        if (dotIndex < atIndex)
+        {
+            RegistrationResult.InnerText += "The dot must appear after the @ character.";
+            return false;
+        }
 
         return true;
     }
@@ -180,7 +190,7 @@ public partial class Registration : System.Web.UI.Page
     {
         if (!approval.Checked)
         {
-            RegistrationResult.InnerText += "יש לאשר את תקנון האתר. ";
+            RegistrationResult.InnerText += "The site regulations must be approved.";
             return false;
         }
 

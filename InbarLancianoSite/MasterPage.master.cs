@@ -17,11 +17,13 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             LoginLogout.HRef = "Logout.aspx";
             LoginLogout.InnerText = "Hello, " + Session["userName"] + "(Click to logout)";
+            essentialsLink.Visible = true;
         }
         else
         {
             LoginLogout.HRef = "Login.aspx";
             LoginLogout.InnerText = "login";
+            essentialsLink.Visible = false;
         }
 
 

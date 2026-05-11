@@ -312,6 +312,13 @@ tr:hover {
     padding: 5px;
 }
 
+.adminTable tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.adminTable, .adminTable th, .adminTable td {
+    border: 1px solid black;
+}
 
 /*
  body {

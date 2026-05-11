@@ -9,7 +9,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
-
+    <table class="adminTable" ID="adminTable" runat="server"></table>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">

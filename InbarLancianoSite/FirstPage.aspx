@@ -52,16 +52,16 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
-        <div class="aside-info">
-        <h3>Popular Beginner's Rackets</h3>
-        <ul class="aside-links">
-            <li><a href="Wilson.aspx" style="color:white; text-decoration:none;">• Wilson Clash 100 v3</a></li>
-            <li><a href="Head.aspx" style="color:white; text-decoration:none;">• Head Speed MP</a></li>
-            <li><a href="Babolat.aspx" style="color:white; text-decoration:none;">• Babolat Pure Drive Lite</a></li>
-        </ul>
-        <hr />
-        <p><strong>Pro Tip:</strong> Most beginners prefer a head size of 100 sq inches or larger!</p>
-    </div>
+        <div class="aside-content">
+            <h3>Popular Beginner's Rackets</h3>
+            <ul class="sidebar-menu">
+                <li><a href="Wilson.aspx">Wilson Clash 100 v3</a></li>
+                <li><a href="Head.aspx">Head Speed MP</a></li>
+                <li><a href="Babolat.aspx">Babolat Pure Drive Lite</a></li>
+            </ul>
+            <hr style="border-color: rgba(255,255,255,0.2); margin: 20px 0;" />
+            <p><strong>Tip:</strong> Most beginners prefer a head size of 100 sq inches or larger!</p>
+        </div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">

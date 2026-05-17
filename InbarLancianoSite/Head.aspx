@@ -17,18 +17,22 @@
                 <p><strong>String Pattern:</strong> 16x19</p>
             </div>
 
-            <h3>Advantages</h3>
-            <ul class="check-list">
-                <li>Great balance between power and control</li>
-                <li>Suitable for many different playing styles</li>
-                <li>Excellent feel and precision on every shot</li>
-            </ul>
+            <div class="info-card">
+                <h3>Advantages</h3>
+                <ul class="check-list">
+                    <li>Great balance between power and control</li>
+                    <li>Suitable for many different playing styles</li>
+                    <li>Excellent feel and precision on every shot</li>
+                </ul>
+            </div>
 
-            <h3>Disadvantages</h3>
-            <ul class="cross-list">
-                <li>Might feel slightly heavy for absolute beginners</li>
-                <li>Requires good technique to unlock full power</li>
-            </ul>
+            <div class="info-card">
+                <h3>Disadvantages</h3>
+                <ul class="cross-list">
+                    <li>Might feel slightly heavy for absolute beginners</li>
+                    <li>Requires good technique to unlock full power</li>
+                </ul>
+            </div>
 
             <h2 class="summary-title">Summary</h2>
             <p class="summary-text">

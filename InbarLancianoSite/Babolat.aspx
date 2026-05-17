@@ -17,18 +17,22 @@
                 <p><strong>String Pattern:</strong> 16x19</p>
             </div>
 
-            <h3>Advantages</h3>
-            <ul class="check-list">
-                <li>Explosive power - helps beginners hit deeper shots</li>
-                <li>Very lightweight and easy to maneuver at the net</li>
-                <li>Iconic blue design used by many pro players</li>
-            </ul>
+            <div class="info-card">
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Explosive power - helps beginners hit deeper shots</li>
+                    <li>Very lightweight and easy to maneuver at the net</li>
+                    <li>Iconic blue design used by many pro players</li>
+                </ul>
+            </div>
 
-            <h3>Disadvantages</h3>
-            <ul class="cross-list">
-                <li>Stiffer frame can feel "vibrat-y" if you miss the center</li>
-                <li>Less control compared to the Wilson Clash</li>
-            </ul>
+            <div class="info-card">
+                <h3>Disadvantages</h3>
+                <ul>
+                    <li>Stiffer frame can feel "vibrat-y" if you miss the center</li>
+                    <li>Less control compared to the Wilson Clash</li>
+                </ul>
+            </div>
 
             <h2 class="summary-title">Summary</h2>
             <p class="summary-text">

@@ -146,7 +146,7 @@ public partial class Registration : System.Web.UI.Page
         }
         if (P[0] != '0')
         {
-            RegistrationResult.InnerText += "The first character in the number must be the digit 0.";
+            RegistrationResult.InnerText += "The first character in the phone number must be the digit 0.";
             return false;
         }
         for (int i = 0; i < P.Length; i++)
@@ -208,7 +208,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (dt.Rows.Count > 0)
         {
-            RegistrationResult.InnerText = "שם משתמש קיים במערכת. אנא בחר.י שם אחר.";
+            RegistrationResult.InnerText = "Username already exists in the system. Please choose another name.";
             return false;
         }
 

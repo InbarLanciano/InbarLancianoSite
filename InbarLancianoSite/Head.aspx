@@ -6,32 +6,35 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
     <div class="racket-page">
         <div class="racket-text">
-            <h2>Head Speed MP</h2>
+            <h2 class="racket-title">Head Speed MP</h2>
 
-            <p><strong>Company:</strong> Head</p>
-            <p><strong>Weight:</strong> 300g</p>
-            <p><strong>Head Size:</strong> 100 in²</p>
-            <p><strong>Length:</strong> 27 in</p>
-            <p><strong>Balance:</strong> 32.0 cm</p>
-            <p><strong>String Pattern:</strong> 16x19</p>
+            <div class="specs-box">
+                <p><strong>Company:</strong> Head</p>
+                <p><strong>Weight:</strong> 300g</p>
+                <p><strong>Head Size:</strong> 100 in²</p>
+                <p><strong>Length:</strong> 27 in</p>
+                <p><strong>Balance:</strong> 32.0 cm</p>
+                <p><strong>String Pattern:</strong> 16x19</p>
+            </div>
 
             <h3>Advantages</h3>
-            <ul>
+            <ul class="check-list">
                 <li>Great balance between power and control</li>
-                <li>Suitable for different playing styles</li>
-                <li>Good feel and precision</li>
+                <li>Suitable for many different playing styles</li>
+                <li>Excellent feel and precision on every shot</li>
             </ul>
 
             <h3>Disadvantages</h3>
-            <ul>
-                <li>Not ideal for beginners</li>
-                <li>Requires good technique</li>
+            <ul class="cross-list">
+                <li>Might feel slightly heavy for absolute beginners</li>
+                <li>Requires good technique to unlock full power</li>
             </ul>
 
-            <h2>Summary</h2>
-            <p>
-                The Head Speed MP is a well-balanced tennis racket designed for intermediate and advanced players.
-                It provides a great combination of control, power, and feel.
+            <h2 class="summary-title">Summary</h2>
+            <p class="summary-text">
+                The Head Speed MP is a legendary choice on the pro tour, used by stars like Novak Djokovic. 
+                It features **Graphene Inside** technology which makes the frame stable while maintaining 
+                high swing speeds. It is the perfect "step-up" racket for players moving to an intermediate level.
             </p>
         </div>
 
@@ -53,7 +56,28 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
-    <h3>Head Series</h3>
+    <div class="aside-info">
+        <h3>Head Series</h3>
+        <p>Head is an Austrian powerhouse in tennis. Their "Speed" line is designed for players who want to hit the ball fast with total accuracy.</p>
+        
+        <hr />
+        
+        <h4>Famous Head Players:</h4>
+        <ul class="aside-links">
+            <li>Novak Djokovic</li>
+            <li>Jannik Sinner</li>
+            <li>Coco Gauff</li>
+        </ul>
+
+        <hr />
+
+        <h4>Other Head Models:</h4>
+        <ul class="aside-links">
+            <li>Head Radical (Versatility)</li>
+            <li>Head Gravity (Huge Sweetspot)</li>
+            <li>Head Extreme (Maximum Spin)</li>
+        </ul>
+    </div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">

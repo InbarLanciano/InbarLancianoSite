@@ -16,23 +16,19 @@
                 <p><strong>Balance:</strong> 31.0 cm</p>
                 <p><strong>String Pattern:</strong> 16x19</p>
             </div>
-
-            <div class="info-card">
+            
                 <h3>Advantages</h3>
                 <ul class="check-list">
                     <li>Comfortable for the arm</li>
                     <li>Good control</li>
                     <li>Easy to swing</li>
                 </ul>
-            </div>
-
-            <div class="info-card">
+            
                 <h3>Disadvantages</h3>
                 <ul class="cross-list">
                     <li>Less power than some other rackets</li>
                     <li>Not always best for very advanced players</li>
                 </ul>
-            </div>
 
             <h2 class="summary-title">Summary</h2>
             <p class="summary-text">

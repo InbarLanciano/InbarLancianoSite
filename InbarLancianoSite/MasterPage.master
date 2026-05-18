@@ -37,12 +37,26 @@
 
         <main>
             <asp:ContentPlaceHolder id="ContentPlaceHolderMain" runat="server">
+
             </asp:ContentPlaceHolder>
         </main>
     </section>
 
     <footer>
-        </footer>
+      <div class="full-width-loop">
+    <div class="loop-track">
+        <img src="images/Wilson-Clash-v3.jpg" alt="Wilson" />
+        <img src="images/Head-Speed-MP-1.jpg" alt="Head" />
+        <img src="images/Babolat-Pure-Drive-1.jpg" alt="Babolat" />
+        <img src="images/Wilson-Clash-V3-100-Racquet.jpg" alt="Wilson" />
+
+        <img src="images/Wilson-Clash-v3.jpg" alt="Wilson" />
+        <img src="images/Head-Speed-MP-1.jpg" alt="Head" />
+        <img src="images/Babolat-Pure-Drive-1.jpg" alt="Babolat" />
+        <img src="images/Wilson-Clash-V3-100-Racquet.jpg" alt="Wilson" />
+    </div>
+</div>
+    </footer>
 
     <asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>

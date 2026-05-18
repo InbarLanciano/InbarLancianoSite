@@ -17,22 +17,18 @@
                 <p><strong>String Pattern:</strong> 16x19</p>
             </div>
 
-            <div class="info-card">
                 <h3>Advantages</h3>
                 <ul>
                     <li>Explosive power - helps beginners hit deeper shots</li>
                     <li>Very lightweight and easy to maneuver at the net</li>
                     <li>Iconic blue design used by many pro players</li>
                 </ul>
-            </div>
 
-            <div class="info-card">
                 <h3>Disadvantages</h3>
                 <ul>
                     <li>Stiffer frame can feel "vibrat-y" if you miss the center</li>
                     <li>Less control compared to the Wilson Clash</li>
                 </ul>
-            </div>
 
             <h2 class="summary-title">Summary</h2>
             <p class="summary-text">
@@ -49,9 +45,11 @@
             </div>
 
             <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/watch?v=BL1QhInlMK8" 
-                    title="Babolat Review"
+
+                <iframe 
+                    src="https://www.youtube.com/embed/BL1QhInlMK8?si=Yd7Wr_XvGxA5A9Jg" 
+                    title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen>
                 </iframe>
             </div>

@@ -15,7 +15,7 @@
                     <th>Model</th>
                     <th>Weight</th>
                     <th>Best For</th>
-                </tr>
+                </tr> 
             </thead>
             <tbody>
                 <tr>
